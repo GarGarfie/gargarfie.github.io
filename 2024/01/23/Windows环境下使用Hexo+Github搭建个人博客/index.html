@@ -24,7 +24,7 @@
 
   
 
-  <title>测试 | 失眠製造</title>
+  <title>失眠製造</title>
 
   
 
@@ -101,20 +101,15 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">测试</h1>
+          <h1 class="title-wrap"></h1>
           <h2 class="title-sub-wrap">
             <strong>Shawn.st</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2024-01-21T14:48:21.829Z" itemprop="datePublished">2024-01-21</time>
+            <time  class="article-date" datetime="2024-01-22T20:22:50.197Z" itemprop="datePublished">2024-01-23</time>
           </h2>
           
-            <h2 class="last-time">
-              <span>最后更新于</span>
-              <time  class="article-updated" datetime="2024-01-22T18:27:11.666Z" itemprop="dateUpdated">2024-01-23</time>
-            </h2>
           
-          
-            <h2 id="/2024/01/21/hello-world/" class="title-sub-wrap leancloud_visitors" data-flag-title="测试">
+            <h2 id="/2024/01/23/Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E4%BD%BF%E7%94%A8Hexo+Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="title-sub-wrap leancloud_visitors" data-flag-title="">
               <em>文章访问量</em>
               <i class="leancloud-visitors-count"></i>
             </h2>
@@ -146,19 +141,85 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h1 id="Windows环境下使用Hexo-Github搭建个人博客"><a href="#Windows环境下使用Hexo-Github搭建个人博客" class="headerlink" title="Windows环境下使用Hexo+Github搭建个人博客"></a>Windows环境下使用Hexo+Github搭建个人博客</h1><h2 id="一、本地环境准备"><a href="#一、本地环境准备" class="headerlink" title="一、本地环境准备"></a>一、本地环境准备</h2><h3 id="1-1-Git"><a href="#1-1-Git" class="headerlink" title="1.1. Git"></a>1.1. Git</h3><p>官网安装：<a target="_blank" rel="noopener" href="https://git-scm.com/">Git Release</a></p>
+<p>安装完成后使用 git终端 &#x2F; cmd 测试以下命令验证安装是否成功:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>出现对应版本号即代表安装成功</p>
+<h3 id="1-2-Node-Js"><a href="#1-2-Node-Js" class="headerlink" title="1.2. Node.Js"></a>1.2. Node.Js</h3><p>英文官网安装：<a target="_blank" rel="noopener" href="https://nodejs.org/en">Download Node.js®</a></p>
+<p>中文官网安装：<a target="_blank" rel="noopener" href="https://nodejs.cn/">Node.Js 中文网</a></p>
+<p>安装完成后使用 git终端 &#x2F; cmd 测试以下命令验证安装是否成功:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>出现对应版本号即代表安装成功</p>
+<h3 id="1-3-Hexo工作目录及部署"><a href="#1-3-Hexo工作目录及部署" class="headerlink" title="1.3. Hexo工作目录及部署"></a>1.3. Hexo工作目录及部署</h3><p>Hexo是基于Node.Js的已经完成的博客代码框架，基于这个模板可以在原有代码修改部分内容就可以部署属于自己的个人博客并发布文章</p>
+<p>第1步. 首先在一个自己选好的合适的文件目录位置创建一个空文件夹并命名为MyBlog</p>
+<p>第2步. 在这个文件夹内右键并Open Git Bash here，在这个工作目录开启Git终端</p>
+<p>第3步. 使用以下命令并运行以安装Hexo</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>继续在终端内使用hexo v命令来检查Hexo是否在此目录内安装成功并检查版本号</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo v</span><br></pre></td></tr></table></figure>
+
+<p>接下来须在工作目录内初始化Hexo项目框架</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p>继续使用命令生成项目</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>在终端内使用hexo s&#x2F;hexo server命令启动本地服务器，进入并检查Hexo默认博客是否正常运行，按Ctrl键点击链接即可用默认浏览器访问，开启本地服务器后通常默认的本地博客地址为<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a></p>
+<h2 id="二、Github静态博客服务器准备-Github-Pages"><a href="#二、Github静态博客服务器准备-Github-Pages" class="headerlink" title="二、Github静态博客服务器准备(Github Pages)"></a>二、Github静态博客服务器准备(Github Pages)</h2><h3 id="2-1-Github-Pages个人仓库创建"><a href="#2-1-Github-Pages个人仓库创建" class="headerlink" title="2.1. Github Pages个人仓库创建"></a>2.1. Github Pages个人仓库创建</h3><p>GitHub作为代码托管平台，允许用户使用GitHub仓库来创建一个仓库作为个人GitHub Pages，并且由GitHub提供服务器支持</p>
+<p>使用Github创建一个仓库，且仓库按照以下格式命名：</p>
+<p>Github用户名.github.io</p>
+<p>例如我的Github用户名为GarGarfie，则我的Github Pages的仓库创建时需要命名为：GarGarfie.github.io</p>
+<h3 id="2-2-本地Git初始化并连接至Github-Pages仓库"><a href="#2-2-本地Git初始化并连接至Github-Pages仓库" class="headerlink" title="2.2. 本地Git初始化并连接至Github Pages仓库"></a>2.2. 本地Git初始化并连接至Github Pages仓库</h3><p>首先在 Git终端 &#x2F; cmd 中使用git config –global <a target="_blank" rel="noopener" href="http://user.name/">user.name</a>  “用户名”初始化用户名，注意在本地初始化Git时尽量使用户名和邮箱与Github保持一致</p>
+<p>使用命令git config –global user.email  “邮箱”初始化邮箱</p>
+<p>通过使用git config –global user.name和git config –global user.email命令来检查设置成功与否</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name  &quot;yourname&quot;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email  &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用户名：git config --global user.name </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email</span><br></pre></td></tr></table></figure>
+
+<p>在本地Git初始化完成后，接下来使用ssh连接将本地Git连接到Github Pages仓库</p>
+<p>在 Git终端 &#x2F; cmd 使用以下命令下载Hexo的Github部署插件（否则Git Fork至Github时一定会报错）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>下载完成后在Git终端中使用命令生成密钥并获取密钥</p>
+<p>使用以下生成密钥，注意将youremail改为刚刚初始化Git时的邮箱，运行命令后按照提示生成密钥（如果不明白可以无脑回车）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
+
+<p>生成密钥成功后需要获取密钥，在Git Bash中使用下列命令运行获取密钥并复制密钥</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<p>在Github中创建ssh密钥并嵌入密钥内容</p>
+<p>打开<a target="_blank" rel="noopener" href="https://github.com/">Github主页</a>，点击头像→点击Settings→SSH and GPG keys→新建一个SSH→将id_rsa.pub内容(刚刚的密钥)粘贴至SSH密钥中→完成创建</p>
+<p>随后在Git Bash中使用下述命令验证ssh连接，出现用户名代表访问成功</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<h2 id="三、Hexo项目配置"><a href="#三、Hexo项目配置" class="headerlink" title="三、Hexo项目配置"></a>三、Hexo项目配置</h2><h3 id="3-1-config-yml文件的修改"><a href="#3-1-config-yml文件的修改" class="headerlink" title="3.1.  _config.yml文件的修改"></a>3.1.  _config.yml文件的修改</h3><p>Hexo项目初始化后，MyBlog文件夹中的_config.yml是Hexo项目框架最基础的信息配置文件，在Git至Github Pages仓库之前必须要对此文件进行配置和修改，可以参考官方的<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration">配置描述Doc</a></p>
+<p>需要特别注意的是以下几个配置：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># Site 块中需要注意的配置：</span><br><span class="line">description: 		#网站的描述，主要用于SEO，告诉搜索引擎一个关于您站点的简单描述，通常建议在其中包含您网站的关键词。</span><br><span class="line">language: zh		#网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，常见的有 zh-Hans和 zh-CN。</span><br><span class="line">timezone: &#x27;Asia/Hong_Kong&#x27;		#网站时区。Hexo 默认使用您电脑的时区。请参考 时区列表 进行设置，如 America/New_York, Japan, 和 UTC 。一般的，对于中国大陆地区可以使用 Asia/Shanghai。</span><br><span class="line"></span><br><span class="line"># URL 块中需要注意的配置：</span><br><span class="line">url: https://用户.github.io/</span><br><span class="line">#如果使用Github Pages，那么url这里一定要填写自己Github Pages的网页地址(注意并非仓库地址)，否则会404</span><br><span class="line"></span><br><span class="line"># Deployment 块中需要注意的问题：</span><br><span class="line"># 我们需要在Deployment块中修改并增添内容来让本地Git顺利上传仓库到Github Pages仓库</span><br><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repository: &#x27;仓库地址&#x27;</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-2-域名映射文件的增添"><a href="#3-2-域名映射文件的增添" class="headerlink" title="3.2. 域名映射文件的增添"></a>3.2. 域名映射文件的增添</h3><p>如果想要达到将默认的博客地址映射到自己拥有的域名的效果的话，需要在Myblog&#x2F;source&#x2F;目录下新建一个命名为CNAME且无任何格式后缀的文件，文件内容编辑为想要映射到的域名</p>
+<h2 id="四、文章的书写生成与项目上传同步"><a href="#四、文章的书写生成与项目上传同步" class="headerlink" title="四、文章的书写生成与项目上传同步"></a>四、文章的书写生成与项目上传同步</h2><h3 id="4-1-Hexo上传文章的工作流"><a href="#4-1-Hexo上传文章的工作流" class="headerlink" title="4.1. Hexo上传文章的工作流"></a>4.1. Hexo上传文章的工作流</h3><p>Hexo框架的文章是使用markdown代码书写的，如果\MyBlog\source_posts\目录下没有任何文章，那么将项目部署至Github Pages仓库后访问个人博客页面会显示404</p>
+<p>常用的Hexo命令如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean		#清除之前生成的项目，可以清除之前项目的一些问题</span><br><span class="line">hexo new post  &quot;文件名&quot;		#上传一个名为&quot;文件名&quot;的md文档的帖子，位于/MyBlog/source/_post/目录</span><br><span class="line">hexo generate		#在本地生成项目，同样可使用hexo g</span><br><span class="line">hexo deploy		#把项目部署至GitHub，同样可使用hexo d</span><br></pre></td></tr></table></figure>
+
+<p>Hexo的常见工作流程为</p>
+<p>编写md文档→放置md文档至\MyBlog\source_posts\目录下→使用hexo g命令生成更新项目→使用hexo d命令部署至Github</p>
+<h3 id="4-2-Markdown文档的编辑"><a href="#4-2-Markdown文档的编辑" class="headerlink" title="4.2. Markdown文档的编辑"></a>4.2. Markdown文档的编辑</h3><p>对于md文档的编辑，如果不熟悉markdown代码的同学可以尝试支持所见即所得功能的编辑器，我有两个推荐的编辑器：</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/Vanessa219/vditor">Vditor</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/shuhongfan/TyporaCrack">Typora</a></p>
+<p>在Github仓库页面显示部署完成后，便可以使用自己的网站链接(格式类似于GarGarfie.github.io)访问自己的个人博客网站了</p>
+<h2 id="五、附加题"><a href="#五、附加题" class="headerlink" title="五、附加题"></a>五、附加题</h2><h3 id="5-1-Live2D看板娘"><a href="#5-1-Live2D看板娘" class="headerlink" title="5.1. Live2D看板娘"></a>5.1. Live2D看板娘</h3><p>参考链接：</p>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/3a6342e16e57">Hexo添加live2D看板动画</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/wang_123_zy/article/details/87181892">Hexo添加Live2D看板娘+模型预览</a></p>
+<p><a target="_blank" rel="noopener" href="https://gitcode.com/xiazeyu/live2d-widget-models/overview?utm_source=csdn_github_accelerator&isLogin=1">Live2D-widget-models</a></p>
 
       </section>
 

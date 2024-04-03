@@ -279,13 +279,13 @@
 <td align="center">支持向量机是一种监督学习的模型，用于数据的分类和回归分析。SVM通过在特征空间中找到一个最优的分隔超平面，以实现不同类别数据的最大间隔分类。SVM特别适合处理高维数据和非线性问题。</td>
 </tr>
 </tbody></table>
+<p>​	</p>
 <p>​	文章还对现有的有限元模型进行了数值研究和实验验证，包括针对一个钢网结构的数值模型分析、Z24桥和永和斜拉桥的全尺度桥梁基准问题研究，使用有限元模型结果数据套用提出的方法以验证所提方法的鲁棒性。研究结果表明，所述方法能够在变化的环境条件下准确识别结构损伤。</p>
 <h4 id="传统且常用的数据标准化和处理方法"><a href="#传统且常用的数据标准化和处理方法" class="headerlink" title="传统且常用的数据标准化和处理方法"></a><strong>传统</strong>且<strong>常用</strong>的数据标准化和处理方法</h4><p>​	数据标准化和处理旨在将原始数据转换为更适合算法处理的格式。这些方法有助于提高模型的准确性和效率。以下是一些常用的数据标准化和处理方法（<strong>注意，这些方法非常传统老旧</strong>）：</p>
 <ol>
-<li><strong>最小-最大标准化 (Min-Max Normalization)</strong><br> 这种方法将所有特征缩放到给定范围内，通常是[0, 1]或[-1, 1]。公式为：</li>
-</ol>
-<p>$$<br>x’ &#x3D; \frac{x - \text{min}(x)}{\text{max}(x) - \text{min}(x)}<br>$$</p>
-<ol start="2">
+<li><p><strong>最小-最大标准化 (Min-Max Normalization)</strong><br> 这种方法将所有特征缩放到给定范围内，通常是[0, 1]或[-1, 1]。公式为：</p>
+<p> $$<br> x’ &#x3D; \frac{x - \text{min}(x)}{\text{max}(x) - \text{min}(x)}<br> $$</p>
+</li>
 <li><p><strong>Z得分标准化 (Z-Score Normalization)</strong></p>
 <p> 也称为标准化或标准分数（Standard Score），它将数据的均值变为0，标准差变为1。公式为：<br> $$<br> z &#x3D; \frac{x - \mu}{\sigma}<br> $$<br> 其中，<code>x</code>是原始数据，<code>\mu</code>是均值，<code>\sigma</code>是标准差。</p>
 <p> <strong>原理：</strong> 通过从原始数据中减去其均值并除以标准差，使得处理后的数据均值为0，标准差为1。<br> <strong>应用：</strong> 广泛用于统计分析和机器学习领域，尤其适用于数据遵循正态分布的情况。通过这种方式，可以减少不同特征之间量纲的影响，使模型更加公平地评估每个特征的重要性。</p>

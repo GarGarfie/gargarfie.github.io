@@ -24,7 +24,7 @@
 
   
 
-  <title>Windows环境下使用Hexo+Github搭建个人博客 | 失眠製造</title>
+  <title>对结构损坏或缺陷检测和识别技术的简单梳理 | 失眠製造</title>
 
   
 
@@ -101,35 +101,37 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">Windows环境下使用Hexo+Github搭建个人博客</h1>
+          <h1 class="title-wrap">对结构损坏或缺陷检测和识别技术的简单梳理</h1>
           <h2 class="title-sub-wrap">
             <strong>Shawn.st</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2024-01-23T12:36:00.000Z" itemprop="datePublished">2024-01-23</time>
+            <time  class="article-date" datetime="2024-04-03T22:42:00.000Z" itemprop="datePublished">2024-04-04</time>
           </h2>
           
           
-            <h2 id="/2024/01/23/Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E4%BD%BF%E7%94%A8Hexo+Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="title-sub-wrap leancloud_visitors" data-flag-title="Windows环境下使用Hexo+Github搭建个人博客">
+            <h2 id="/2024/04/04/%E5%AF%B9%E7%BB%93%E6%9E%84%E6%8D%9F%E5%9D%8F%E6%88%96%E7%BC%BA%E9%99%B7%E6%A3%80%E6%B5%8B%E5%92%8C%E8%AF%86%E5%88%AB%E6%8A%80%E6%9C%AF%E7%9A%84%E7%AE%80%E5%8D%95%E6%A2%B3%E7%90%86/" class="title-sub-wrap leancloud_visitors" data-flag-title="对结构损坏或缺陷检测和识别技术的简单梳理">
               <em>文章访问量</em>
               <i class="leancloud-visitors-count"></i>
             </h2>
           
           <ul class="wrap-list dark">
   
-    <li><a href="/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/">📒 个人网站搭建</a></li>
+    <li><a href="/categories/%E5%AD%A6%E6%9C%AF/">📒 学术</a></li>
   
 </ul>
           <ul class="wrap-list dark">
   
-    <li><a href="/tags/%E5%89%8D%E7%AB%AF/">🏷️ 前端</a></li>
+    <li><a href="/tags/%E5%AD%A6%E6%9C%AF/">🏷️ 学术</a></li>
   
-    <li><a href="/tags/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/">🏷️ 个人网站</a></li>
+    <li><a href="/tags/%E5%9C%9F%E6%9C%A8%E5%B7%A5%E7%A8%8B/">🏷️ 土木工程</a></li>
   
-    <li><a href="/tags/Hexo/">🏷️ Hexo</a></li>
+    <li><a href="/tags/%E7%BB%93%E6%9E%84%E6%8D%9F%E5%9D%8F/">🏷️ 结构损坏</a></li>
   
-    <li><a href="/tags/HTML/">🏷️ HTML</a></li>
+    <li><a href="/tags/%E5%81%A5%E5%BA%B7%E7%9B%91%E6%B5%8B/">🏷️ 健康监测</a></li>
   
-    <li><a href="/tags/JavaScript/">🏷️ JavaScript</a></li>
+    <li><a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">🏷️ 深度学习</a></li>
+  
+    <li><a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">🏷️ 机器学习</a></li>
   
 </ul>
         </div>
@@ -153,92 +155,196 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h1 id="Windows环境下使用Hexo-Github搭建个人博客"><a href="#Windows环境下使用Hexo-Github搭建个人博客" class="headerlink" title="Windows环境下使用Hexo+Github搭建个人博客"></a>Windows环境下使用Hexo+Github搭建个人博客</h1><p><img src="https://i.postimg.cc/VLG02Sn2/Blog1.png"></p>
-<h2 id="本地环境准备"><a href="#本地环境准备" class="headerlink" title="本地环境准备"></a>本地环境准备</h2><h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><p>官网安装：<a target="_blank" rel="noopener" href="https://git-scm.com/">Git Release</a></p>
-<p>安装完成后使用 git终端 &#x2F; cmd 测试以下命令验证安装是否成功:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
-
-<p>出现对应版本号即代表安装成功</p>
-<h3 id="Node-Js"><a href="#Node-Js" class="headerlink" title="Node.Js"></a>Node.Js</h3><p>英文官网安装：<a target="_blank" rel="noopener" href="https://nodejs.org/en">Download Node.js®</a></p>
-<p>中文官网安装：<a target="_blank" rel="noopener" href="https://nodejs.cn/">Node.Js 中文网</a></p>
-<p>安装完成后使用 git终端 &#x2F; cmd 测试以下命令验证安装是否成功:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-
-<p>出现对应版本号即代表安装成功</p>
-<h3 id="Hexo工作目录及部署"><a href="#Hexo工作目录及部署" class="headerlink" title="Hexo工作目录及部署"></a>Hexo工作目录及部署</h3><p>Hexo是基于Node.Js的已经完成的博客代码框架，基于这个模板可以在原有代码修改部分内容就可以部署属于自己的个人博客并发布文章</p>
-<p>第1步. 首先在一个自己选好的合适的文件目录位置创建一个空文件夹并命名为MyBlog</p>
-<p>第2步. 在这个文件夹内右键并Open Git Bash here，在这个工作目录开启Git终端</p>
-<p>第3步. 使用以下命令并运行以安装Hexo</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p>继续在终端内使用hexo v命令来检查Hexo是否在此目录内安装成功并检查版本号</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo v</span><br></pre></td></tr></table></figure>
-
-<p>接下来须在工作目录内初始化Hexo项目框架</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-
-<p>继续使用命令生成项目</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>在终端内使用hexo s&#x2F;hexo server命令启动本地服务器，进入并检查Hexo默认博客是否正常运行，按Ctrl键点击链接即可用默认浏览器访问，开启本地服务器后通常默认的本地博客地址为<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a></p>
-<h2 id="Github静态博客服务器准备-Github-Pages"><a href="#Github静态博客服务器准备-Github-Pages" class="headerlink" title="Github静态博客服务器准备(Github Pages)"></a>Github静态博客服务器准备(Github Pages)</h2><h3 id="Github-Pages个人仓库创建"><a href="#Github-Pages个人仓库创建" class="headerlink" title="Github Pages个人仓库创建"></a>Github Pages个人仓库创建</h3><p>GitHub作为代码托管平台，允许用户使用GitHub仓库来创建一个仓库作为个人GitHub Pages，并且由GitHub提供服务器支持</p>
-<p>使用Github创建一个仓库，且仓库按照以下格式命名：</p>
-<p>Github用户名.github.io</p>
-<p>例如我的Github用户名为GarGarfie，则我的Github Pages的仓库创建时需要命名为：GarGarfie.github.io</p>
-<h3 id="本地Git初始化并连接至Github-Pages仓库"><a href="#本地Git初始化并连接至Github-Pages仓库" class="headerlink" title="本地Git初始化并连接至Github Pages仓库"></a>本地Git初始化并连接至Github Pages仓库</h3><p>首先在 Git终端 &#x2F; cmd 中使用git config –global <a target="_blank" rel="noopener" href="http://user.name/">user.name</a>  “用户名”初始化用户名，注意在本地初始化Git时尽量使用户名和邮箱与Github保持一致</p>
-<p>使用命令git config –global user.email  “邮箱”初始化邮箱</p>
-<p>通过使用git config –global user.name和git config –global user.email命令来检查设置成功与否</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name  &quot;yourname&quot;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email  &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用户名：git config --global user.name </span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email</span><br></pre></td></tr></table></figure>
-
-<p>在本地Git初始化完成后，接下来使用ssh连接将本地Git连接到Github Pages仓库</p>
-<p>在 Git终端 &#x2F; cmd 使用以下命令下载Hexo的Github部署插件（否则Git Fork至Github时一定会报错）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<p>下载完成后在Git终端中使用命令生成密钥并获取密钥</p>
-<p>使用以下生成密钥，注意将youremail改为刚刚初始化Git时的邮箱，运行命令后按照提示生成密钥（如果不明白可以无脑回车）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
-
-<p>生成密钥成功后需要获取密钥，在Git Bash中使用下列命令运行获取密钥并复制密钥</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
-
-<p>在Github中创建ssh密钥并嵌入密钥内容</p>
-<p>打开<a target="_blank" rel="noopener" href="https://github.com/">Github主页</a>，点击头像→点击Settings→SSH and GPG keys→新建一个SSH→将id_rsa.pub内容(刚刚的密钥)粘贴至SSH密钥中→完成创建</p>
-<p>随后在Git Bash中使用下述命令验证ssh连接，出现用户名代表访问成功</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-
-<h2 id="Hexo项目配置"><a href="#Hexo项目配置" class="headerlink" title="Hexo项目配置"></a>Hexo项目配置</h2><h3 id="config-yml文件的修改"><a href="#config-yml文件的修改" class="headerlink" title="_config.yml文件的修改"></a>_config.yml文件的修改</h3><p>Hexo项目初始化后，MyBlog文件夹中的_config.yml是Hexo项目框架最基础的信息配置文件，在Git至Github Pages仓库之前必须要对此文件进行配置和修改，可以参考官方的<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration">配置描述Doc</a></p>
-<p>需要特别注意的是以下几个配置：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># Site 块中需要注意的配置：</span><br><span class="line">description: 		#网站的描述，主要用于SEO，告诉搜索引擎一个关于您站点的简单描述，通常建议在其中包含您网站的关键词。</span><br><span class="line">language: zh		#网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，常见的有 zh-Hans和 zh-CN。</span><br><span class="line">timezone: &#x27;Asia/Hong_Kong&#x27;		#网站时区。Hexo 默认使用您电脑的时区。请参考 时区列表 进行设置，如 America/New_York, Japan, 和 UTC 。一般的，对于中国大陆地区可以使用 Asia/Shanghai。</span><br><span class="line"></span><br><span class="line"># URL 块中需要注意的配置：</span><br><span class="line">url: https://用户.github.io/</span><br><span class="line">#如果使用Github Pages，那么url这里一定要填写自己Github Pages的网页地址(注意并非仓库地址)，否则会404</span><br><span class="line"></span><br><span class="line"># Deployment 块中需要注意的问题：</span><br><span class="line"># 我们需要在Deployment块中修改并增添内容来让本地Git顺利上传仓库到Github Pages仓库</span><br><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repository: &#x27;仓库地址&#x27;</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
-
-<h3 id="域名映射文件的增添"><a href="#域名映射文件的增添" class="headerlink" title="域名映射文件的增添"></a>域名映射文件的增添</h3><p>如果想要达到将默认的博客地址映射到自己拥有的域名的效果的话，需要在Myblog&#x2F;source&#x2F;目录下新建一个命名为CNAME且无任何格式后缀的文件，文件内容编辑为想要映射到的域名</p>
-<h2 id="文章的书写生成与项目上传同步"><a href="#文章的书写生成与项目上传同步" class="headerlink" title="文章的书写生成与项目上传同步"></a>文章的书写生成与项目上传同步</h2><h3 id="Hexo上传文章的工作流"><a href="#Hexo上传文章的工作流" class="headerlink" title="Hexo上传文章的工作流"></a>Hexo上传文章的工作流</h3><p>Hexo框架的文章是使用markdown代码书写的，如果\MyBlog\source_posts\目录下没有任何文章，那么将项目部署至Github Pages仓库后访问个人博客页面会显示404</p>
-<p>常用的Hexo命令如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean		#清除之前生成的项目，可以清除之前项目的一些问题</span><br><span class="line">hexo new post  &quot;文件名&quot;		#上传一个名为&quot;文件名&quot;的md文档的帖子，位于/MyBlog/source/_post/目录</span><br><span class="line">hexo generate		#在本地生成项目，同样可使用hexo g</span><br><span class="line">hexo deploy		#把项目部署至GitHub，同样可使用hexo d</span><br></pre></td></tr></table></figure>
-
-<p>Hexo的常见工作流程为</p>
-<p>编写md文档→放置md文档至\MyBlog\source_posts\目录下→使用hexo g命令生成更新项目→使用hexo d命令部署至Github</p>
-<h3 id="Markdown文档的编辑"><a href="#Markdown文档的编辑" class="headerlink" title="Markdown文档的编辑"></a>Markdown文档的编辑</h3><p>对于md文档的编辑，如果不熟悉markdown代码的同学可以尝试支持所见即所得功能的编辑器，我有两个推荐的编辑器：</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/Vanessa219/vditor">Vditor</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/shuhongfan/TyporaCrack">Typora</a></p>
-<p>在Github仓库页面显示部署完成后，便可以使用自己的网站链接(格式类似于GarGarfie.github.io)访问自己的个人博客网站了</p>
-<h2 id="附加题"><a href="#附加题" class="headerlink" title="附加题"></a>附加题</h2><h3 id="Live2D看板娘"><a href="#Live2D看板娘" class="headerlink" title="Live2D看板娘"></a>Live2D看板娘</h3><p>参考链接：</p>
-<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/3a6342e16e57">Hexo添加live2D看板动画</a></p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/wang_123_zy/article/details/87181892">Hexo添加Live2D看板娘+模型预览</a></p>
-<p><a target="_blank" rel="noopener" href="https://gitcode.com/xiazeyu/live2d-widget-models/overview?utm_source=csdn_github_accelerator&isLogin=1">Live2D-widget-models</a></p>
+        <p><img src="https://s1.imagehub.cc/images/2024/04/04/0fa7ae004fadf0e5b6c0ddae062cc3c9.png" alt="长沙的海棠花开了耶🦁"></p>
+<h1 id="对土木工程结构损坏或缺陷检测和识别技术的简单梳理"><a href="#对土木工程结构损坏或缺陷检测和识别技术的简单梳理" class="headerlink" title="对土木工程结构损坏或缺陷检测和识别技术的简单梳理"></a>对土木工程结构损坏或缺陷检测和识别技术的简单梳理</h1><h2 id="一、结构健康监测-Structural-health-monitoring-SHM"><a href="#一、结构健康监测-Structural-health-monitoring-SHM" class="headerlink" title="一、结构健康监测 Structural health monitoring (SHM)"></a>一、结构健康监测 <a target="_blank" rel="noopener" href="https://www.sciencedirect.com/topics/engineering/structural-health-monitoring">Structural health monitoring</a> (SHM)</h2><h3 id="（一）概念和步骤"><a href="#（一）概念和步骤" class="headerlink" title="（一）概念和步骤"></a>（一）概念和步骤</h3><p>​	现有桥梁的损伤识别对于民用基础设施系统的运行安全起着至关重要的作用。如果不及时识别结构损坏，可能会导致经济和人员损失。因此，研究和开发<a target="_blank" rel="noopener" href="https://www.sciencedirect.com/topics/engineering/structural-health-monitoring">结构健康监测</a>（SHM）技术以<a target="_blank" rel="noopener" href="https://www.sciencedirect.com/topics/engineering/automatic-manner">自动方式(automated manner)</a>进行准确和早期的损伤检测以节省<a target="_blank" rel="noopener" href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/repair-and-maintenance">维修和维护</a>成本至关重要。</p>
+<blockquote>
+<p>​	在操作环境中，结构会随着老化和使用而退化。长期 SHM 定期输出有关结构继续执行其预期功能的能力的更新信息。在地震或爆炸载荷等极端事件发生后，SHM 可用于快速状况筛选。 SHM 旨在近乎实时地提供有关结构完整性的可靠信息。<a target="_blank" rel="noopener" href="https://scholar.google.com/scholar?hl=zh-CN&as_sdt=0,5&q=Dawson,+Brian+(1976).+%22Vibration+condition+monitoring+techniques+for+rotating+machinery%22.+The+Shock+and+Vibration+Digest.+&btnG=">[1]</a></p>
+</blockquote>
+<p>​	结构健康监测（SHM）是在连续数据收集的基础上对结构健康状况做出明智决策的战略实施过程。为了直接监控&#x2F;检测识别系统的状态，有必要识别所获取的数据中的特征，以便区分未损坏和损坏的结构。最常见的特征提取方法之一是将测得的<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Fault_detection_and_isolation">系统响应量</a>（如振动振幅或频率）与退化系统的观测结果关联起来。损伤累积试验也可用于识别适当的特征，在试验过程中，将被研究系统的重要结构部件放置在实际的加载条件下发生退化。这一过程可能涉及诱导损伤测试、疲劳测试、腐蚀增长或温度循环，以加速累积某些类型的损伤。</p>
+<p>​	结构健康监测技术涉及多个步骤，顺序包括：</p>
+<ol>
+<li><p>选择激励方法 (Selecting the excitation methods)</p>
+</li>
+<li><p>选择传感器类型&#x2F;选择收集数据的类型 (The sensor&#x2F;Data types)</p>
+</li>
+<li><p>选择数量和位置以及数据采集&#x2F;存储&#x2F;传输硬件（通常称为<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Health_and_usage_monitoring_systems">健康和使用监控系统</a>）(number and locations, and the data acquisition&#x2F;storage&#x2F;transmittal hardware)</p>
+</li>
+<li><p>从放置在结构上的传感器采集数据</p>
+</li>
+<li><p>数据标准化和清理以确保可靠性</p>
+</li>
+<li><p>特征提取以识别指示性损坏模式及数据压缩</p>
+</li>
+<li><p>开发统计模型</p>
+</li>
+<li><p>分析这些模式以区分损坏状态&#x2F;模式</p>
+<p>在这些步骤中我们可以将 “5.数据标准化和清理以确保可靠性” 归类为<strong>数据管理</strong>，而 “6, 7, 8” 三项可以归类于<strong>数据解释和诊断</strong>，<strong>数据解释和诊断</strong>的要素可以简要概括为4项，即：</p>
+<ol>
+<li>系统识别</li>
+<li>结构模型更新</li>
+<li>结构状况评估</li>
+<li>预测</li>
+</ol>
+</li>
+</ol>
+<h3 id="（二）激励方法"><a href="#（二）激励方法" class="headerlink" title="（二）激励方法"></a>（二）激励方法</h3><p>​	可以大致将激励方法分为三类：</p>
+<p>​       1) <strong>自然激励</strong>：如风、雨、地震等自然事件，这些自然力可以作为外部激励源，通过分析结构在这些激励下的响应来评估结构的健康状况。<br>​       2) <strong>人工激励</strong>：通过使用振动台、冲击锤、振动激励器等设备，对结构施加控制的激励，并测量其响应。这种方法可以更准确地模拟和分析结构的动态特性。<br>​       3) <strong>环境激励</strong>：除自然激励外，人为的环境变化（如温度变化、湿度变化）也可以作为一种激励方法，通过监测结构对这些变化的响应，可以评估结构的适应性和耐久性。</p>
+<h3 id="（三）监测类型"><a href="#（三）监测类型" class="headerlink" title="（三）监测类型"></a>（三）监测类型</h3><p>​	监测源数据或者说数据类型决定了不同的监测类型。最常见的两种监测技术是基于波传播的技术<a target="_blank" rel="noopener" href="https://deepblue.lib.umich.edu/handle/2027.42/77498">[2]</a>和基于振动的技术<a target="_blank" rel="noopener" href="https://doi.org/10.1177%2F1475921704047500">[3]</a> <a target="_blank" rel="noopener" href="https://eprints.bournemouth.ac.uk/24581/">[4]</a> <a target="_blank" rel="noopener" href="https://doi.org/10.1177/1475921710365419">[5]</a>。以下是常见的监测技术：</p>
+<p>​       1) <strong>基于波传播的技术</strong>：这种技术利用波（如声波、超声波或电磁波）在材料中的传播特性来探测结构内部的损伤。波在穿越结构如钢筋混凝土板、金属构件或复合材料时，其速度、振幅或其他特性会因遇到裂缝、空洞或异物而改变。通过分析这些改变，可以识别并定位结构中的损伤。</p>
+<p><strong>例如</strong>：使用超声波检测技术来检查大型钢结构的焊接缺陷。一个小型的超声波发射器在一端发出波，而在另一端的接收器则记录波的到达时间和强度。如果焊缝中存在裂缝，超声波的传播路径会被中断或改变，导致接收器记录到的信号出现异常，从而揭示潜在的结构问题。</p>
+<p>​       2) <strong>基于振动的技术</strong>：基于振动的技术依靠测量结构在自然或人工激励下的振动响应来评估其健康状况。通过对比结构的当前振动模式与已知的正常状态振动模式，可以识别出结构的变化或损伤。</p>
+<p><strong>例如</strong>：桥梁的振动监测。安装在桥梁各关键位置的加速度计可以实时记录桥梁在日常交通荷载和风荷载下的振动情况。通过分析这些数据，工程师可以识别出结构性能的变化，比如由于支座老化或缆索松弛引起的自然频率变化。这种监测有助于提前发现问题，避免灾难性的结构失败。</p>
+<p>​       3) <strong>光纤传感技术</strong>：光纤传感器是利用光在光纤中的传播特性来检测结构中的变化，如应变、温度、压力等。光纤传感器可以布置在很长的距离上，能够提供连续的监测，并且对环境干扰有很强的抵抗力，这使其成为监测大型结构（如桥梁、高楼、隧道）的理想选择。光纤传感器的工作原理通常基于光在光纤中传播时，其特性（如强度、相位、偏振或频率）会随着光纤周围环境的变化而变化。通过测量这些变化，可以推断出结构的状态。光纤布拉格光栅（FBG）传感器是一种常见的光纤传感器，它通过测量光波长的变化来检测应变和温度的变化。</p>
+<p><strong>例如</strong>：在高速铁路桥梁上安装光纤布拉格光栅（FBG）传感器。这些传感器能够监测桥梁在列车通过时的微小形变，及时捕捉到因应力集中或疲劳导致的损伤迹象。FBG传感器对温度和应变的高灵敏度使其成为监测大型基础设施的理想选择。</p>
+<p>​       4) <strong>电阻应变计和应变传感器</strong>：电阻应变计是用于测量材料或结构在受力后发生形变的设备。它们是基于这样一个原理：当导体被拉伸或压缩时，其电阻会发生变化。这种变化可以被精确测量，并转换为应变值，从而提供有关结构应力状态的数据。应变计通常贴在结构的表面，在施加或自然荷载下，可以监测到结构的微小形变，这对于评估结构的健康状况非常有用。它们尤其适用于监测裂缝的扩展、局部应力集中或预应力损失等问题。</p>
+<p><strong>例如</strong>：在风力涡轮机叶片上安装电阻应变计。这些应变计能够测量叶片在风力作用下的弯曲和扭转，提供关键数据以评估叶片的性能和结构完整性。此信息对于预测维护和避免故障至关重要。</p>
+<p>​       5) <strong>热成像和红外热成像技术</strong>：热成像和红外热成像技术利用红外摄像机捕捉对象的热辐射图像，以非接触的方式测量和监视温度分布。结构表面的温度分布可以揭示潜在的问题区域，这一技术基于一个关键原理：结构损伤（如裂缝、脱层、空洞或水分侵入）会影响材料的热特性，从而改变表面的温度分布。通过红外热成像，可以非接触式地远距离监测这些变化，提供一种有效的早期预警系统。<br><strong>例如</strong>：裂缝检测，在混凝土结构中，裂缝可能会导致内部钢筋的腐蚀，进而影响结构的整体稳定性。热成像可以帮助在早期阶段检测这些裂缝，尤其是那些肉眼难以直接观察到的微小裂缝。<br><strong>再例如</strong>：水分侵入，对于结构而言，水分侵入是一个严重的问题，它可以导致材料退化，比如混凝土膨胀或钢筋锈蚀。红外热成像能够检测结构表面或内部的湿度变化，因为水分会导致热传导率变化，这反映在热成像中。<br><strong>再再例如</strong>：在道路、桥梁甲板和机场跑道等结构中，脱层或空洞的存在可能导致结构失效。热成像技术能够通过监测热能在这些缺陷区域的传播方式不同于完好区域的传播方式来识别这些问题。<br><strong>再再再例如</strong>：可以使用机器学习方法来结合红外技术，或者使用机器学习+地理信息系统(Geographic Information System, GIS)+红外技术来识别建筑缺陷</p>
+<p><strong>实例</strong>：<br>桥梁检测：使用热成像技术对桥梁进行检测，以识别因环境影响或使用年限造成的潜在结构问题。例如，对桥面进行热成像扫描，可以揭示由于水分渗透或裂缝导致的异常热点，这些可能是进一步损伤的前兆。<br>混凝土结构监测：在大型混凝土坝或建筑物中，通过热成像技术监测混凝土的温度分布，以发现可能存在的裂缝、脱层或水分聚集区域。特别是在混凝土硬化过程中，不均匀的温度分布可能表明混凝土浇筑存在问题，如过早的结构裂缝。</p>
+<p>​       6) <strong>数字图像处理和计算机视觉</strong>：数字图像处理和计算机视觉技术通过分析从摄像头或其他图像捕捉设备收集的图像来监测结构健康状况。这些技术可以用于检测结构表面的裂缝、腐蚀、变形或其他可视化指标。高分辨率图像可以提供关于结构表面状况的详细信息，而计算机视觉算法则能够自动识别和量化这些特征。这种方法对于那些需要定期视觉检查以识别表面损伤的结构特别有用，比如桥梁、道路和建筑物的外墙。</p>
+<p>应用原理：<br>数字图像处理包括图像增强、特征提取、图像分割等步骤，目的是改善图像质量，提取有用信息。计算机视觉则进一步解析这些信息，以理解图像内容，例如通过模式识别技术自动检测结构中的裂缝、腐蚀或其他异常特征。</p>
+<p><strong>具体应用与实例</strong>：<br>裂缝检测：通过对建筑物、桥梁或道路表面的图像进行分析，计算机视觉算法可以自动识别裂缝的存在、位置和大小。例如，无人机搭载高分辨率摄像头对桥梁进行拍摄，然后利用数字图像处理技术分析图像，精确地标出裂缝位置和评估裂缝宽度。<br>腐蚀检测：在钢结构或混凝土中钢筋的腐蚀可能导致严重的结构问题。通过分析结构表面的图像，可以识别出腐蚀的迹象，如颜色变化、表面纹理改变等。这对于桥梁、管道和其他暴露于腐蚀性环境中的结构尤为重要。<br>变形和位移监测：对连续拍摄的一系列图像进行时间序列分析，可以监测结构随时间发生的微小变形或位移。这种方法适用于监测大坝、高楼以及地基的稳定性。通过比较不同时间点的图像，可以识别出结构形变的趋势，及时发现潜在的风险。<br>混凝土表面缺陷：混凝土结构的表面缺陷，如孔洞、蜂窝和裂缝，会影响其耐久性和承载能力。使用数字图像处理技术，可以从混凝土表面的高分辨率图像中自动识别这些缺陷，帮助工程师评估结构的完整性。<br>也可以和GIS结合，来对灾害或者是裂纹进行检测。</p>
+<p>​       7) <strong>环境监测</strong>：涉及到对影响结构性能和耐久性的各种环境因素进行实时监测，如温度、湿度、腐蚀性化学物质、盐分、风速和风向等。通过分析这些环境参数的变化，可以更好地理解结构材料的退化过程，预测结构的寿命，以及提前采取维修或加固措施，避免潜在的结构失败。</p>
+<p>应用原理：<br>环境监测依赖于一系列传感器，这些传感器能够连续或定期记录特定环境因素的数据。收集到的数据随后被分析，以评估其对结构健康的影响。例如，连续的温度和湿度监测可以帮助评估混凝土内部的水化反应速率或钢材的腐蚀速率。</p>
+<p><strong>具体应用与实例</strong><br>温度和湿度监测：对建筑物、桥梁或隧道等结构进行温度和湿度监测，以评估环境条件对结构材料的长期影响。例如，混凝土裂缝的形成和扩展可能受到温度变化的影响，而高湿度环境则加速了钢筋的腐蚀过程。<br>化学物质和盐分监测：在桥梁和海洋结构等暴露于盐水或腐蚀性化学物质环境中的结构上，监测这些化学成分的浓度对于预测结构材料的腐蚀速率和采取相应的防腐措施至关重要。<br>风速和风向监测：对高层建筑、大跨度桥梁或风力发电塔等结构进行风速和风向监测，以确保结构在强风条件下的安全。通过分析风荷载数据，可以对结构的动态响应进行模拟，优化设计以抵抗极端风速下的结构振动。<br>腐蚀监测：在桥梁、管道和其他金属结构上安装腐蚀监测传感器，以监测腐蚀速率和环境腐蚀性。这对于制定有效的维护计划和延长结构使用寿命至关重要。</p>
+<h2 id="二、桥梁、建筑物和其他相关基础设施工程结构的健康评估"><a href="#二、桥梁、建筑物和其他相关基础设施工程结构的健康评估" class="headerlink" title="二、桥梁、建筑物和其他相关基础设施工程结构的健康评估"></a>二、桥梁、建筑物和其他相关基础设施工程结构的健康评估</h2><p>​	第一大节所述内容是<strong>结构健康检测</strong>的宏观概念，应用于各种形式的基础设施或结构的健康评估或监测通常被称为结构健康评估(Structural Health Assessment, SHA) 或 结构健康监测(Structural health monitoring, SHM)。</p>
+<p>​	在涉及到各种基础设施或结构损坏时，需要对结构进行如下四个步骤的评估：</p>
+<ol>
+<li><p>检测结构是否存在损坏</p>
+</li>
+<li><p>确定损坏位置</p>
+</li>
+<li><p>识别损坏类型</p>
+</li>
+<li><p>量化损害的严重程度</p>
+<p>有必要利用信号处理和统计分类方法将基础设施健康状况的传感器数据转换为损坏信息以进行评估。</p>
+</li>
+</ol>
+<h3 id="（一）施工管理-建筑生命周期中评估"><a href="#（一）施工管理-建筑生命周期中评估" class="headerlink" title="（一）施工管理&#x2F;建筑生命周期中评估"></a>（一）施工管理&#x2F;建筑生命周期中评估</h3><ol>
+<li>SHM的生命安全评估</li>
+<li>SHM的经济评估</li>
+<li>如何定义正在调查的系统的损坏？</li>
+<li>对于多种损坏可能性，哪些情况最受关注？</li>
+<li>被监控系统运行的运行条件和环境条件是什么？</li>
+<li>在操作环境中获取数据有哪些限制？如何解决这些限制或问题？</li>
+</ol>
+<h3 id="（二）数据采集、标准化和清理"><a href="#（二）数据采集、标准化和清理" class="headerlink" title="（二）数据采集、标准化和清理"></a>（二）数据采集、标准化和清理</h3><p>​	SHM 过程的数据采集部分包括选择激励方法、传感器类型、数量和位置，以及数据采集&#x2F;存储&#x2F;传输硬件。同样，这一过程也要根据具体应用而定。在做出这些决定时，经济因素将发挥重要作用。另一个必须考虑的因素是收集数据的时间间隔。</p>
+<p>​	由于数据是在不同条件下测量的，因此数据归一化的能力对损坏识别过程非常重要。就 SHM 而言，数据归一化是将损坏引起的传感器读数变化与不同操作和环境条件引起的传感器读数变化区分开来的过程。最常见的程序之一是根据测量输入对测量响应进行归一化处理。当环境或操作的可变性成为问题时，就需要以某种时间方式对数据进行归一化处理，以便于比较在环境或操作周期的类似时间测量的数据。数据采集过程中的可变性来源以及被监测系统的可变性来源需要加以识别，并尽可能将其最小化。一般来说，并非所有的变异源都能消除。因此，有必要进行适当的测量，以便对这些来源进行统计量化。环境和测试条件的变化、数据还原过程的变化以及单位与单位之间的不一致性都可能导致变异。</p>
+<p>​	数据清理是有选择性地选择数据，将其传递给特征选择过程或从特征选择过程中剔除的过程。数据清理过程通常基于直接参与数据采集的人员所获得的知识。例如，对测试装置的检查可能会发现某个传感器安装松动，因此，根据执行测量人员的判断，这组数据或来自该特定传感器的数据可能会被有选择性地从特征选择流程中删除。滤波和重新采样等信号处理技术也可视为数据清洗程序。</p>
+<p>​	最后，SHM 过程中的数据采集、归一化和清理部分不应是一成不变的。从特征选择过程和统计模型开发过程中获得的洞察力将为改进数据采集过程提供变化信息。</p>
+<p>​	<strong>以这篇文章为例：</strong><a target="_blank" rel="noopener" href="https://www.sciencedirect.com/science/article/pii/S0141029622016418#b3">Structural damage detection based on variational mode decomposition and kernel PCA-based support vector machine</a> <a target="_blank" rel="noopener" href="https://www.sciencedirect.com/science/article/pii/S0141029622016418#b3">[6]</a></p>
+<p>​	这篇文章提出了一种结合变分模态分解（Variational modal decomposition, VMD）和核主成分分析（KPCA）的新型结构损伤检测方法。该方法旨在克服环境变化的影响，准确地检测结构损伤。提出的新的整个监测识别流程可以概括为以下几个关键步骤：</p>
+<ol>
+<li><strong>数据分解</strong>：首先，利用变分模态分解（VMD）算法对结构的振动响应数据进行分解，以获得内禀模态函数（IMFs）和时间-频率域的特征。</li>
+<li><strong>特征提取</strong>：然后，从选定的IMF组件中提取谱质心特征（Spectral Centroid，简称SC），这些特征对应于短时傅立叶变换（STFT）中频谱形状的统计特性，用以构建损伤特征矩阵。选择包含损伤信息的若干IMF组件进行特征提取，以去除冗余（或无关）的特征。</li>
+<li><strong>降维处理</strong>：接下来，对构建的特征矩阵执行核主成分分析（KPCA），以克服操作和环境变化的影响，从而获得敏感于损伤的指标。</li>
+<li><strong>决策制定</strong>：利用支持向量机（SVM）作为决策制定工具，比较此方法与现有方法提取损伤特征的有效性。</li>
+</ol>
+<p>术语表</p>
+<table>
+<thead>
+<tr>
+<th align="center">术语ㅤㅤㅤ                       ㅤ    ㅤ        ㅤ   ㅤ</th>
+<th align="center">ㅤ ㅤ  英文 ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ ㅤㅤㅤㅤㅤㅤㅤ</th>
+<th align="center">原理</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">变分模态分解</td>
+<td align="center">Variational modal decomposition (VMD)</td>
+<td align="center">变分模态分解是一种自适应的信号处理方法，用于将复杂信号分解成若干个具有特定频带宽度的内禀模态函数（IMFs）。VMD通过最小化一个预设的变分问题来实现信号的分解，目标是获取一组带宽受限的、在频率域内紧凑分布的模态分量。</td>
+</tr>
+<tr>
+<td align="center">内禀模态函数</td>
+<td align="center">Intrinsic Mode Functions (IMFs)</td>
+<td align="center">内禀模态函数是从复杂信号中提取出来的简单振荡模式。每个IMF代表信号中的一种固有振荡模式，它们一起构成了原始信号的完整表达。这是一种用于时频分析的方法，特别适合处理非线性和非平稳信号。</td>
+</tr>
+<tr>
+<td align="center">谱质心特征</td>
+<td align="center">Spectral Centroid Feature</td>
+<td align="center">谱质心是一个声音信号频谱特性的度量，代表声音频谱的“重心”。在音乐处理中，它通常用于描述音色的“亮度”。在结构健康监测中，谱质心特征可以用来从信号的频谱中提取信息，以识别结构的损伤状态。</td>
+</tr>
+<tr>
+<td align="center">短时傅立叶变换</td>
+<td align="center">Spectral Centroid Feature (STFT)</td>
+<td align="center">短时傅立叶变换是一种时间-频率分析方法，通过将长时间信号分割成短时间段，对每段信号单独进行傅立叶变换，从而获得信号随时间变化的频率信息。STFT适合分析非平稳信号。</td>
+</tr>
+<tr>
+<td align="center">核主成分分析</td>
+<td align="center">Kernel Principal Component Analysis (KPCA)</td>
+<td align="center">核主成分分析是一种非线性的数据降维技术，它通过将原始数据映射到一个高维特征空间中，然后在这个高维空间内进行传统的主成分分析（PCA）。KPCA能够揭示数据中的非线性结构，适用于复杂数据分析。</td>
+</tr>
+<tr>
+<td align="center">支持向量机</td>
+<td align="center">Support Vector Machine (SVM)</td>
+<td align="center">支持向量机是一种监督学习的模型，用于数据的分类和回归分析。SVM通过在特征空间中找到一个最优的分隔超平面，以实现不同类别数据的最大间隔分类。SVM特别适合处理高维数据和非线性问题。</td>
+</tr>
+</tbody></table>
+<p>​	文章还对现有的有限元模型进行了数值研究和实验验证，包括针对一个钢网结构的数值模型分析、Z24桥和永和斜拉桥的全尺度桥梁基准问题研究，使用有限元模型结果数据套用提出的方法以验证所提方法的鲁棒性。研究结果表明，所述方法能够在变化的环境条件下准确识别结构损伤。</p>
+<h4 id="传统且常用的数据标准化和处理方法"><a href="#传统且常用的数据标准化和处理方法" class="headerlink" title="传统且常用的数据标准化和处理方法"></a><strong>传统</strong>且<strong>常用</strong>的数据标准化和处理方法</h4><p>​	数据标准化和处理旨在将原始数据转换为更适合算法处理的格式。这些方法有助于提高模型的准确性和效率。以下是一些常用的数据标准化和处理方法（<strong>注意，这些方法非常传统老旧</strong>）：</p>
+<ol>
+<li><strong>最小-最大标准化 (Min-Max Normalization)</strong><br> 这种方法将所有特征缩放到给定范围内，通常是[0, 1]或[-1, 1]。公式为：</li>
+</ol>
+<p>$$<br>x’ &#x3D; \frac{x - \text{min}(x)}{\text{max}(x) - \text{min}(x)}<br>$$</p>
+<ol start="2">
+<li><p><strong>Z得分标准化 (Z-Score Normalization)</strong></p>
+<p> 也称为标准化或标准分数（Standard Score），它将数据的均值变为0，标准差变为1。公式为：<br> $$<br> z &#x3D; \frac{x - \mu}{\sigma}<br> $$<br> 其中，<code>x</code>是原始数据，<code>\mu</code>是均值，<code>\sigma</code>是标准差。</p>
+<p> <strong>原理：</strong> 通过从原始数据中减去其均值并除以标准差，使得处理后的数据均值为0，标准差为1。<br> <strong>应用：</strong> 广泛用于统计分析和机器学习领域，尤其适用于数据遵循正态分布的情况。通过这种方式，可以减少不同特征之间量纲的影响，使模型更加公平地评估每个特征的重要性。</p>
+</li>
+<li><p><strong>小数定标标准化 (Decimal Scaling)</strong></p>
+<p> 这种方法通过移动数据的小数点来进行缩放。小数点的移动位数取决于绝对值最大的数。公式为：<br> $$<br> x’ &#x3D; \frac{x}{10^k}<br> $$<br> 其中，<code>k</code>是小数点移动的位数，选择<code>k</code>使得最终<code>x&#39;</code>的绝对值在[0, 1]之间。</p>
+<p> <strong>原理：</strong> 通过移动数据的小数点位置来进行缩放，移动的位数基于最大绝对值的数量级。<br> <strong>应用：</strong> 主要用于简化数据的表示，减少数据的复杂性，便于数据的处理和分析。这种方法相对简单，但不常用于复杂的机器学习模型训练。</p>
+</li>
+<li><p><strong>对数变换 (Log Transformation)</strong></p>
+<p> 对数变换可以用来处理具有重尾分布的数据，使其分布更加接近正态分布。公式为：<br> $$<br> x’ &#x3D; \log(x)<br> $$<br> 这对于减少数据的偏斜性非常有效。</p>
+<p> <strong>原理：</strong> 使用自然对数或底数为10的对数函数转换数据，常用于处理具有长尾分布的数据。<br> <strong>应用：</strong> 对数变换可以改善数据的正态性、对称性，以及改善线性回归模型的拟合度。</p>
+</li>
+<li><p><strong>平方根变换 (Square Root Transformation)</strong></p>
+<p> 平方根变换也是减少数据偏斜性的一种方法，特别是对于计数数据。公式为：<br> $$<br> x’ &#x3D; \sqrt{x}<br> $$<br> <strong>原理：</strong> 对数据应用平方根，用于处理正偏态分布的数据。<br> <strong>应用：</strong> 类似于对数变换，平方根变换也用于改善数据的正态性和对称性，常见于环境科学领域。</p>
+</li>
+<li><p><strong>盒形-Cox变换 (Box-Cox Transformation)</strong></p>
+<p> 盒形-Cox变换是一种通用的方法，可以使数据更接近正态分布。它定义为：<br> $$<br> x’(\lambda) &#x3D; \begin{cases}<br> \frac{x^\lambda - 1}{\lambda} &amp; \text{if } \lambda \neq 0 \<br> \log(x) &amp; \text{if } \lambda &#x3D; 0<br> \end{cases}<br> $$<br> 其中，<code>λ</code>是变换参数。</p>
+<p> <strong>原理：</strong> 一种参数化的变换方法，可以根据参数λ的不同选择对数变换、平方根变换等多种变换形式，目的是使数据更接近正态分布。<br> <strong>应用：</strong> 盒形-Cox变换广泛用于统计建模和机器学习，特别是在需要正态分布假设的模型中，如线性回归、方差分析等。</p>
+</li>
+<li><p><strong>归一化 (Normalization)</strong><br> <strong>原理：</strong> 将特征向量的长度缩放到单位范数（即向量的长度为1），使得每个特征在距离计算中的贡献均等。<br> <strong>应用：</strong> 常用于文本处理和图像处理领域，以及需要计算向量间相似度的机器学习算法中，如余弦相似度计算。</p>
+<p> 归一化的具体公式因不同而异，一般情况下，当提到将特征向量的长度缩放到单位范数时，公式为如下形式：<br> $$<br> \text{Normalized} ; \mathbf{x} &#x3D; \frac{\mathbf{x}}{|\mathbf{x}|}<br> $$<br> 其中，<code>x</code>代表原始特征向量，<code>|x|</code>是向量<code>x</code>的范数（例如L2范数）。</p>
+</li>
+<li><p><strong>离散化和分箱 (Discretization and Binning)</strong><br> <strong>原理：</strong> 将连续特征分割成多个区间（箱子），将连续特征转换为离散特征。<br> <strong>应用：</strong> 常用于数据预处理阶段，特别是在决策树模型中。离散化可以简化模型，提高模型的解释性，并有助于处理连续变量的非线性关系。</p>
+<p> 离散化和分箱是一个过程或方法，将连续特征的值范围划分为若干个区间，每个区间代表一个离散的类别或值。一个简单的分箱例子可以通过划分范围的边界来表示：<br> $$<br> \text{Binned} ; x &#x3D;<br> \begin{cases}<br> 1 &amp; \text{if } a \leq x &lt; b \<br> 2 &amp; \text{if } b \leq x &lt; c \<br> \vdots &amp; \vdots \<br> n &amp; \text{if } y \leq x \leq z<br> \end{cases}<br> $$<br> 其中，<code>a, b, c, ..., y, z</code>是连续特征<code>x</code>的值范围的边界。</p>
+</li>
+<li><p><strong>独热编码 (One-Hot Encoding)</strong><br> <strong>原理：</strong> 将分类变量转换为机器学习算法可以更好处理的形式，为每个类别创建一个新的二进制特征。<br> <strong>应用：</strong> 在几乎所有处理分类数据的机器学习模型中都会用到，包括线性回归、逻辑回归、神经网络等。</p>
+</li>
+</ol>
+<p>· 新的方法在此不做赘述，会在以后的文章中书写总结，如果更新会同步更新此文章并添加导向链接。</p>
+<h3 id="（三）特征提取和数据压缩"><a href="#（三）特征提取和数据压缩" class="headerlink" title="（三）特征提取和数据压缩"></a>（三）特征提取和数据压缩</h3><p>​	SHM 过程在技术文献中最受关注的领域是数据特征的识别，使人们能够区分未损坏和损坏的结构。该特征选择过程的本质是数据的压缩。损坏识别的最佳功能同样是针对特定应用的。</p>
+<p>​	最常见的特征提取方法之一是将测量到的系统响应量（例如振动幅度或频率）与退化系统的第一手观察结果相关联。开发损坏识别特征的另一种方法是将工程缺陷（类似于实际操作条件下预期的缺陷）应用于系统，并初步了解对预期损坏敏感的参数。有缺陷的系统还可用于验证诊断测量是否足够灵敏，能够区分从未损坏和损坏的系统中识别出的特征。在此过程中，使用经过实验验证的有限元模型等分析工具可能是一笔巨大的财富。在许多情况下，分析工具用于执行数值实验，通过计算机模拟引入缺陷。损伤累积测试也可用于识别适当的特征，在此过程中，所研究系统的重要结构部件通过将其置于实际负载条件下而退化。此过程可能涉及诱导损伤测试、疲劳测试、腐蚀增长或温度循环，以加速方式累积某些类型的损伤。对适当特征的深入了解可以从如上所述的几种类型的分析和实验研究中获得，并且通常是从这些研究的某种组合中获得的信息的结果。</p>
+<p>​	执行 SHM 所需的操作实施和诊断测量技术比结构动力学信息的传统用途产生更多的数据。当设想对结构生命周期内获得的许多特征集进行比较时，数据的压缩是有利且必要的。此外，由于数据将在较长时间内和在操作环境中从结构中获取，因此必须开发强大的数据缩减技术，以在存在环境和操作变化的情况下保持对感兴趣的结构变化的特征敏感性。为了进一步帮助提取和记录执行 SHM 所需的质量数据，应表征特征的统计显着性并在压缩过程中使用。</p>
+<p><strong>我们仍然以刚刚提到的文章为例：</strong><a target="_blank" rel="noopener" href="https://www.sciencedirect.com/science/article/pii/S0141029622016418#b3">Structural damage detection based on variational mode decomposition and kernel PCA-based support vector machine</a> </p>
+<p>再次回顾文章整个方法流程：</p>
+<ol>
+<li><strong>数据分解</strong>：首先，使用变分模态分解算法对结构的振动响应数据进行分解，以获得内禀模态函数（IMFs）和时间-频率域的特征。</li>
+<li><strong>特征提取</strong>：然后，从选定的IMF组件中提取谱质心特征（Spectral Centroid，简称SC），这些特征对应于短时傅立叶变换（Short-Time Fourier Transform, STFT）中频谱形状的统计特性，用以构建损伤特征矩阵。考虑包含损伤信息的若干IMF组件进行特征提取，以去除冗余（或无关）的特征。</li>
+<li><strong>数据压缩</strong>：接着，对构建的特征矩阵执行核主成分分析（KPCA），以克服操作和环境变化的影响，从而获得对损伤敏感的指标。</li>
+<li><strong>决策制定</strong>：最后，利用支持向量机（Support Vector Machine, SVM）作为决策制定工具，比较此方法与现有方法提取损伤特征的有效性。</li>
+</ol>
+<p>这其中，第2、3步即特征提取和数据压缩。</p>
+<p>· 特征提取和数据压缩相关的方法在此不做赘述，会在以后的文章中书写总结，如果更新会同步更新此文章并添加导向链接。</p>
+<h3 id="（四）统计模型开发"><a href="#（四）统计模型开发" class="headerlink" title="（四）统计模型开发"></a>（四）统计模型开发</h3><p>SHM 过程中在技术文献中受到最少关注的部分是开发用于区分未损坏和损坏结构的特征的统计模型。统计模型开发涉及对提取的特征进行操作以量化结构的损坏状态的算法的实现。统计模型开发中使用的算法通常分为三类。当来自未损坏和损坏结构的数据均可用时，统计模式识别算法属于一般分类类别，通常称为监督学习。组分类和回归分析是监督学习算法的类别。无监督学习是指应用于不包含受损结构示例的数据的算法。异常值或新颖性检测是无监督学习应用中应用的主要算法类别。所有算法都会分析测量或导出特征的统计分布，以增强损坏识别过程。</p>
+<p>相关统计模型开发方法在此不做赘述，会在以后的文章中书写总结，如果更新会同步更新此文章并添加导向链接。</p>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a><u>References</u></h2><ol>
+<li>Dawson, Brian (1976). “Vibration condition monitoring techniques for rotating machinery”. <em>The Shock and Vibration Digest</em>. <strong>8</strong> (12): 3–8. <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Doi_(identifier)">doi</a>:<a target="_blank" rel="noopener" href="https://doi.org/10.1177%2F058310247600801203">10.1177&#x2F;058310247600801203</a>.</li>
+<li>Raghavan, A. and Cesnik, C. E., Review of guided-wave structural health monitoring,” Shock and Vibration Digest, vol. 39, no. 2, pp. 91-114, 2007.</li>
+<li>Carden, E; Fanning P (2004). “Vibration based condition monitoring: a review”. <em>Structural Health Monitoring</em>. <strong>3</strong> (4): 355–377. <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/CiteSeerX_(identifier)">CiteSeerX</a> <a target="_blank" rel="noopener" href="https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.118.3093">10.1.1.118.3093</a>. <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Doi_(identifier)">doi</a>:<a target="_blank" rel="noopener" href="https://doi.org/10.1177%2F1475921704047500">10.1177&#x2F;1475921704047500</a>. <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/S2CID_(identifier)">S2CID</a> <a target="_blank" rel="noopener" href="https://api.semanticscholar.org/CorpusID:14414187">14414187</a>.</li>
+<li>Montalvao, D., Maia, N. M. M., and Ribeiro, A. M. R., A review of vibration- based structural health monitoring with special emphasis on composite materials,” Shock and Vibration Digest, vol. 38, no. 4, pp. 295-326, 2006.</li>
+<li>Fan, W. and Qiao, P. Z., Vibration-based damage identification methods: A review and comparative study,” Structural Health Monitoring, vol. 10, no. 1, pp. 83-111, 2010.</li>
+<li>Bisheh HB, Amiri GG. Structural damage detection based on variational mode decomposition and kernel PCA-based support vector machine. Engineering Structures. 2023;278:115565. doi:<a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.engstruct.2022.115565">10.1016&#x2F;j.engstruct.2022.115565</a></li>
+</ol>
 
       </section>
 
       
       
         <nav class="article-nav">
+          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
@@ -249,11 +355,10 @@
           <h2 class="card-text--title text-ellipsis">解决宝塔面板中安装Docker后依然显示“当前未安装docker或docker-compose”的问题</h2>
         </a>
       
-      <div class="card-text--row">Newer</div>
+      <div class="card-text--row">Older</div>
     </div>
   </article>
 </div>
-          
           
         </nav>
       
@@ -524,7 +629,7 @@
     <span>TOC</span>
   </div>
   <div class="widget-body">
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87"><span class="toc-number">1.</span> <span class="toc-text">本地环境准备</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Git"><span class="toc-number">1.1.</span> <span class="toc-text">Git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Node-Js"><span class="toc-number">1.2.</span> <span class="toc-text">Node.Js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E5%8F%8A%E9%83%A8%E7%BD%B2"><span class="toc-number">1.3.</span> <span class="toc-text">Hexo工作目录及部署</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Github%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%87%86%E5%A4%87-Github-Pages"><span class="toc-number">2.</span> <span class="toc-text">Github静态博客服务器准备(Github Pages)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Github-Pages%E4%B8%AA%E4%BA%BA%E4%BB%93%E5%BA%93%E5%88%9B%E5%BB%BA"><span class="toc-number">2.1.</span> <span class="toc-text">Github Pages个人仓库创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0Git%E5%88%9D%E5%A7%8B%E5%8C%96%E5%B9%B6%E8%BF%9E%E6%8E%A5%E8%87%B3Github-Pages%E4%BB%93%E5%BA%93"><span class="toc-number">2.2.</span> <span class="toc-text">本地Git初始化并连接至Github Pages仓库</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE"><span class="toc-number">3.</span> <span class="toc-text">Hexo项目配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#config-yml%E6%96%87%E4%BB%B6%E7%9A%84%E4%BF%AE%E6%94%B9"><span class="toc-number">3.1.</span> <span class="toc-text">_config.yml文件的修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%9F%E5%90%8D%E6%98%A0%E5%B0%84%E6%96%87%E4%BB%B6%E7%9A%84%E5%A2%9E%E6%B7%BB"><span class="toc-number">3.2.</span> <span class="toc-text">域名映射文件的增添</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E7%9A%84%E4%B9%A6%E5%86%99%E7%94%9F%E6%88%90%E4%B8%8E%E9%A1%B9%E7%9B%AE%E4%B8%8A%E4%BC%A0%E5%90%8C%E6%AD%A5"><span class="toc-number">4.</span> <span class="toc-text">文章的书写生成与项目上传同步</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo%E4%B8%8A%E4%BC%A0%E6%96%87%E7%AB%A0%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81"><span class="toc-number">4.1.</span> <span class="toc-text">Hexo上传文章的工作流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Markdown%E6%96%87%E6%A1%A3%E7%9A%84%E7%BC%96%E8%BE%91"><span class="toc-number">4.2.</span> <span class="toc-text">Markdown文档的编辑</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%84%E5%8A%A0%E9%A2%98"><span class="toc-number">5.</span> <span class="toc-text">附加题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Live2D%E7%9C%8B%E6%9D%BF%E5%A8%98"><span class="toc-number">5.1.</span> <span class="toc-text">Live2D看板娘</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%BB%93%E6%9E%84%E5%81%A5%E5%BA%B7%E7%9B%91%E6%B5%8B-Structural-health-monitoring-SHM"><span class="toc-number">1.</span> <span class="toc-text">一、结构健康监测 Structural health monitoring (SHM)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E6%A6%82%E5%BF%B5%E5%92%8C%E6%AD%A5%E9%AA%A4"><span class="toc-number">1.1.</span> <span class="toc-text">（一）概念和步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E6%BF%80%E5%8A%B1%E6%96%B9%E6%B3%95"><span class="toc-number">1.2.</span> <span class="toc-text">（二）激励方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E7%9B%91%E6%B5%8B%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.3.</span> <span class="toc-text">（三）监测类型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%A1%A5%E6%A2%81%E3%80%81%E5%BB%BA%E7%AD%91%E7%89%A9%E5%92%8C%E5%85%B6%E4%BB%96%E7%9B%B8%E5%85%B3%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E5%B7%A5%E7%A8%8B%E7%BB%93%E6%9E%84%E7%9A%84%E5%81%A5%E5%BA%B7%E8%AF%84%E4%BC%B0"><span class="toc-number">2.</span> <span class="toc-text">二、桥梁、建筑物和其他相关基础设施工程结构的健康评估</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E6%96%BD%E5%B7%A5%E7%AE%A1%E7%90%86-%E5%BB%BA%E7%AD%91%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E4%B8%AD%E8%AF%84%E4%BC%B0"><span class="toc-number">2.1.</span> <span class="toc-text">（一）施工管理&#x2F;建筑生命周期中评估</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E3%80%81%E6%A0%87%E5%87%86%E5%8C%96%E5%92%8C%E6%B8%85%E7%90%86"><span class="toc-number">2.2.</span> <span class="toc-text">（二）数据采集、标准化和清理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96%E5%92%8C%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9"><span class="toc-number">2.3.</span> <span class="toc-text">（三）特征提取和数据压缩</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E7%BB%9F%E8%AE%A1%E6%A8%A1%E5%9E%8B%E5%BC%80%E5%8F%91"><span class="toc-number">2.4.</span> <span class="toc-text">（四）统计模型开发</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#References"><span class="toc-number">3.</span> <span class="toc-text">References</span></a></li></ol>
   </div>
 </section>
 

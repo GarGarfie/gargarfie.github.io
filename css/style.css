@@ -99,6 +99,14 @@
     --theme-border-secondary: #373e47;
   }
 }
+spline-viewer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
 ::-webkit-scrollbar {
   display: none;
 }

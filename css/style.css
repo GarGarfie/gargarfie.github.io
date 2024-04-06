@@ -99,14 +99,6 @@
     --theme-border-secondary: #373e47;
   }
 }
-spline-viewer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -9999;
-}
 ::-webkit-scrollbar {
   display: none;
 }
@@ -1339,4 +1331,17 @@ html.show-mobile-nav .navbar-list {
   .content-container.post-container .widget-info {
     display: none;
   }
+}
+spline-viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.spline-container {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255,255,255,0.8);
 }

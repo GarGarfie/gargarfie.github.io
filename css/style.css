@@ -598,6 +598,8 @@ html.show-mobile-nav .navbar-list {
   background-position: center;
   background-repeat: no-repeat;
   z-index: auto;
+/* 添加渐变遮罩 */
+  mask-image: linear-gradient(to bottom, #000 0%, #000 50%, rgba(0,0,0,0) 100%);
 }
 .post-image:before {
   position: absolute;

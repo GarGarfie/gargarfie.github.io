@@ -45,18 +45,8 @@
 
 </head>
 <body>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var deviceWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-      
-      if (deviceWidth >= 768) {
-        // 在电脑端加载3D背景
-        document.write('<script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.93/build/spline-viewer.js"><\/script>');
-        document.write('<spline-viewer url="https://prod.spline.design/fPH8yVE-umTQPezD/scene.splinecode"></spline-viewer>');
-      }
-    });
-  </script>
- 
+  <div id="3d-background"></div>
+
   <div class="root-container">
     
 <!-- header container -->
@@ -285,6 +275,24 @@
       <path d="M512 896c-25.6 0-42.666667-17.066667-42.666667-42.666667L469.333333 170.666667c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 682.666667C554.666667 878.933333 537.6 896 512 896z"></path>
     </svg>
   </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var deviceWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      
+      if (deviceWidth >= 768) {
+        // 在电脑端加载3D背景
+        var script = document.createElement('script');
+        script.type = 'module';
+        script.src = 'https://unpkg.com/@splinetool/viewer@1.0.93/build/spline-viewer.js';
+        document.head.appendChild(script);
+
+        var splineViewer = document.createElement('spline-viewer');
+        splineViewer.url = 'https://prod.spline.design/UITuzVyRHY9s1EYP/scene.splinecode';
+        document.getElementById('3d-background').appendChild(splineViewer);
+      }
+    });
+  </script>
 
   
   <!-- aplayer -->

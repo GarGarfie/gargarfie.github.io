@@ -47,10 +47,18 @@
 
 </head>
 <body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var deviceWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      
+      if (deviceWidth >= 768) {
+        // 在电脑端加载3D背景
+        document.write('<script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.93/build/spline-viewer.js"><\/script>');
+        document.write('<spline-viewer url="https://prod.spline.design/fPH8yVE-umTQPezD/scene.splinecode"></spline-viewer>');
+      }
+    });
+  </script>
  
-  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.93/build/spline-viewer.js"></script>
-  <spline-viewer url="https://prod.spline.design/fPH8yVE-umTQPezD/scene.splinecode"></spline-viewer>
-  
   <div class="root-container">
     
 <!-- header container -->

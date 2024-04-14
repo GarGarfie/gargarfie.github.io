@@ -280,6 +280,18 @@
     <p>&copy; 2024 <a href="/" target="_blank">Shawn.st</a></p>
 
     
+      <script src='https://unpkg.com/mermaid@/dist/mermaid.min.js'></script>
+      <script>
+        if (window.mermaid) {
+        mermaid.initialize({
+                startOnLoad: true,
+                theme: 'neural',
+                   });
+        }
+      </script>
+    
+
+    
 
     <p>Powered by <a href="https://hexo.io" target="_blank" rel="noopener noreferrer">Hexo</a> | Article Publishing by  - <a href="https://github.com/GarGarfie" target="_blank" rel="noopener noreferrer author">Shawn</a></p>
 
@@ -291,14 +303,6 @@
   </div>
 </footer>
 
-{% if mermaid.enable %}
-  <script src='https://unpkg.com/mermaid@{{ mermaid.version }}/dist/mermaid.min.js'></script>
-  <script>
-    if (window.mermaid) {
-      mermaid.initialize({{ JSON.stringify( mermaid.options) }});
-    }
-  </script>
-{% endif %}
   </div>
 
   <div class="back-to-top-fixed soft-size--round soft-style--box">

@@ -130,7 +130,7 @@
           
             <h2 class="last-time">
               <span>最后更新于</span>
-              <time  class="article-updated" datetime="2024-04-14T15:32:13.827Z" itemprop="dateUpdated">2024-04-14</time>
+              <time  class="article-updated" datetime="2024-04-14T15:40:22.784Z" itemprop="dateUpdated">2024-04-14</time>
             </h2>
           
           
@@ -331,7 +331,12 @@
 
 <p>​	个人看来，文章中的反演分析算法虽然有一定的理论基础和实际效果，但仍有一些局限性，如计算量大、收敛性难以保证等。关于这篇文章的创新性和实用性，可根据本人博客中之前的文章 “<a href="%E5%AD%A6%E6%9C%AF%E6%9C%9F%E5%88%8A%E8%AE%BA%E6%96%87%E5%AF%BB%E6%89%BE%E5%88%9B%E6%96%B0%E7%82%B9%E7%9A%84%E6%96%B9%E6%B3%95%E5%92%8C%E6%8A%80%E5%B7%A7">学术期刊论文寻找创新点的方法和技巧</a>” 来判断。</p>
 <h2 id="文章的详细反演及计算过程"><a href="#文章的详细反演及计算过程" class="headerlink" title="文章的详细反演及计算过程"></a>文章的详细反演及计算过程</h2><p>​	我们按照如下步骤进行复现推导：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">flowchart TD;</span><br><span class="line">    A[&quot;1.推导出计算ｗ值的理论分析公式&quot;] --&gt; E(&quot;穷举法实施反演分析&quot;)</span><br><span class="line">    B[&quot;2.应用样条函数进行数据平滑处理&quot;] --&gt; C[&quot;3.应用B-样条函数求支护结构弯矩、剪力&quot;]</span><br><span class="line">    C[&quot;3.应用B-样条函数求支护结构弯矩、剪力&quot;] --&gt; E(&quot;穷举法实施反演分析&quot;)</span><br><span class="line">    D[&quot;4.建立基坑力学模型(即使用到参数m的模型公式)&quot;] --&gt; E(&quot;穷举法实施反演分析&quot;)</span><br><span class="line">    E(&quot;穷举法实施反演分析&quot;) --&gt; F(&quot;应用于实际工程并计算验证&quot;)</span><br></pre></td></tr></table></figure>
+<pre class="mermaid">graph TD;
+    A["1.推导出计算ｗ值的理论分析公式"] --> E("穷举法实施反演分析")
+    B["2.应用样条函数进行数据平滑处理"] --> C["3.应用B-样条函数求支护结构弯矩、剪力"]
+    C["3.应用B-样条函数求支护结构弯矩、剪力"] --> E("穷举法实施反演分析")
+    D["4.建立基坑力学模型(即使用到参数m的模型公式)"] --> E("穷举法实施反演分析")
+    E("穷举法实施反演分析") --> F("应用于实际工程并计算验证")</pre>
 
 <h3 id="（一）推导出计算w值的理论分析公式"><a href="#（一）推导出计算w值的理论分析公式" class="headerlink" title="（一）推导出计算ｗ值的理论分析公式"></a>（一）推导出计算ｗ值的理论分析公式</h3><p>​	1.假设支护结构底端嵌入坑底土体足够深，基坑处于弹性抗力状态时近似地认为支护结构底端的位移量为零。当基坑处于被动极限状态时支护结构底端产生微小位移量。<br>​	2.假设嵌固段内土体为同一层土，基坑开挖面附近支护结构的水平位移量为s<sub>0</sub>。<br>​	3.基于弹性半空间应力状态理论，在嵌固段被动区内取一微单元进行应力分析，并结合线弹性本构方程推导出土体反力公式:<br>$$<br>σ_x &#x3D; γzk_0 + Es&#x2F;(1-μ^2) * εx<br>$$<br>​	其中σx为被动区土体水平方向应力，γ为土体重度,k0为静止土压力系数，Es为被动区土体弹性模量，μ为泊松比，εx为被动区土体水平向应变。</p>
 <p>​	4.考虑到实际工程中土体弹性模量、泊松比等难以准确确定，提出假设基坑被动区土层处于弹性抗力状态时，水平反力系数可表示为:<br>$$<br>ks &#x3D; mz+k_0 &#x3D; mz + 2ctan(45°+φ&#x2F;2) *Δ_1 &#x2F;s0<br>$$<br>​	其中m为土层水平反力系数的比例系数，Δ<sub>1</sub>为强度折减系数，c为土体黏聚力，φ为内摩擦角。</p>

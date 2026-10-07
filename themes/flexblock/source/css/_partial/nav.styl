@@ -102,9 +102,11 @@ html.show-mobile-nav {
   align-items: center
   gap: 5px
   padding: 4px 10px
-  border: 1px solid rgba(255, 255, 255, 0.45)
+  background-color: rgba(0, 0, 0, 0.35)
+  border: 1px solid rgba(255, 255, 255, 0.7)
   border-radius: 999px
-  color: var(--theme-text-light)
+  color: #ffffff
+  backdrop-filter: blur(6px)
   font-size: 13px
   font-weight: bolder
   line-height: 1.4
@@ -113,8 +115,8 @@ html.show-mobile-nav {
   transition: background-color 0.2s ease, border-color 0.2s ease
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.15)
-    border-color: rgba(255, 255, 255, 0.8)
+    background-color: rgba(0, 0, 0, 0.55)
+    border-color: #ffffff
   }
 }
 

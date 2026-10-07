@@ -75,7 +75,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css">
   <% } %>
 
-  <%- css('css/style') %>
+  <%# 带版本号，避免浏览器和 GitHub Pages 缓存旧样式 %>
+  <link rel="stylesheet" href="<%- url_for('css/style.css') %>?v=<%= Date.now() %>">
   <style>
     #3d-background {
       position: fixed;

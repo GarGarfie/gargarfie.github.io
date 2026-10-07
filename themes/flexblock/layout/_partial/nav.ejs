@@ -1,5 +1,7 @@
 <!-- navbar -->
 <% var lang = page_lang() %>
+<% var langLinks = lang_switch_links() %>
+<% var langNames = { zh: '简体中文', en: 'English', ru: 'Русский' } %>
 <nav class="navbar">
   <div class="navbar-content">
     <!-- logo -->
@@ -14,21 +16,46 @@
     </div>
     <!-- link -->
     <div class="navbar-link">
+      <ul class="navbar-list">
+        <% for (var i in theme.menu) { %>
+          <li class="navbar-list-item"><a href="<%- lang_url(theme.menu[i], lang) %>"><%= __('menu_' + i) %></a></li>
+        <% } %>
+      </ul>
+      <!-- 语言切换：独立于菜单的地球图标下拉，手机上也始终可见 -->
+      <details class="lang-switch">
+        <summary class="lang-switch-btn" aria-label="Language">
+          <svg class="lang-switch-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M3 12h18"></path>
+            <path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"></path>
+          </svg>
+          <span class="lang-switch-current"><% langLinks.forEach(function (item) { if (item.active) { %><%= item.label %><% } }) %></span>
+          <svg class="lang-switch-caret" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6l6-6"></path></svg>
+        </summary>
+        <ul class="lang-switch-menu">
+          <% langLinks.forEach(function (item) { %>
+            <li>
+              <a href="<%- item.href %>" hreflang="<%= item.lang %>" lang="<%= item.lang %>" class="<%= item.active ? 'active' : '' %>">
+                <span><%= langNames[item.lang] %></span>
+                <% if (item.active) { %><span class="lang-switch-check">✓</span><% } %>
+              </a>
+            </li>
+          <% }) %>
+        </ul>
+      </details>
       <div class="navbar-btn">
         <div></div>
         <div></div>
         <div></div>
       </div>
-      <ul class="navbar-list">
-        <% for (var i in theme.menu) { %>
-          <li class="navbar-list-item"><a href="<%- lang_url(theme.menu[i], lang) %>"><%= __('menu_' + i) %></a></li>
-        <% } %>
-        <li class="navbar-list-item navbar-lang">
-          <% lang_switch_links().forEach(function (item) { %>
-            <a href="<%- item.href %>" hreflang="<%= item.lang %>" class="<%= item.active ? 'active' : '' %>"><%= item.label %></a>
-          <% }) %>
-        </li>
-      </ul>
     </div>
   </div>
 </nav>
+<script>
+  // 点击下拉菜单外部时收起
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('.lang-switch[open]').forEach(function (el) {
+      if (!el.contains(e.target)) el.removeAttribute('open');
+    });
+  });
+</script>

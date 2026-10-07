@@ -58,6 +58,10 @@ html.show-mobile-nav {
 }
 
 .navbar-link {
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  gap: 24px
   text-align: right
   font-size: 15px
 }
@@ -79,17 +83,81 @@ html.show-mobile-nav {
   }
 }
   
-.navbar-lang {
+// 语言切换下拉
+.lang-switch {
+  position: relative
+  user-select: none
+
+  summary {
+    list-style: none
+
+    &::-webkit-details-marker {
+      display: none
+    }
+  }
+}
+
+.lang-switch-btn {
   display: flex
-  gap: 8px
+  align-items: center
+  gap: 5px
+  padding: 4px 10px
+  border: 1px solid rgba(255, 255, 255, 0.45)
+  border-radius: 999px
+  color: var(--theme-text-light)
+  font-size: 13px
+  font-weight: bolder
+  line-height: 1.4
+  white-space: nowrap
+  cursor: pointer
+  transition: background-color 0.2s ease, border-color 0.2s ease
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.15)
+    border-color: rgba(255, 255, 255, 0.8)
+  }
+}
+
+.lang-switch-caret {
+  transition: transform 0.2s ease
+}
+
+.lang-switch[open] .lang-switch-caret {
+  transform: rotate(180deg)
+}
+
+.lang-switch-menu {
+  position: absolute
+  top: calc(100% + 8px)
+  right: 0
+  z-index: 10
+  min-width: 150px
+  margin: 0
+  padding: 6px
+  list-style: none
+  text-align: left
+  background-color: var(--theme-bg-high)
+  border-radius: 10px
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18)
 
   a {
-    opacity: 0.6
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 8px 12px
+    border-radius: 6px
+    color: var(--theme-text-primary)
+    font-size: 14px
+    text-decoration: none
+    transition: background-color 0.2s ease
+
+    &:hover {
+      background-color: var(--theme-bg-primary)
+    }
 
     &.active {
-      opacity: 1
-      text-decoration: underline
-      text-underline-offset: 4px
+      color: var(--theme-text-active)
+      font-weight: bolder
     }
   }
 }
@@ -212,5 +280,14 @@ html.show-mobile-nav {
 
   .navbar-list-item a {
     color: #161b3d
+  }
+
+  .navbar-link {
+    gap: 14px
+  }
+
+  .lang-switch-btn {
+    padding: 2px 8px
+    font-size: 12px
   }
 }

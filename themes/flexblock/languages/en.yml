@@ -1,0 +1,39 @@
+categories: Categories
+search: Search
+tags: Tags
+tagcloud: Tag Cloud
+tweets: Tweets
+prev: Prev
+next: Next
+comment: Comments
+archive_a: Archives
+archive_b: "Archives: %s"
+page: Page %d
+recent_posts: Recent Posts
+newer: Newer
+older: Older
+share: Share
+powered_by: Powered by
+rss_feed: RSS Feed
+category: Category
+tag: Tag
+
+site_title: Insomnia Crafting
+site_subtitle: Shawn.st's Personal Website
+site_description: Shawn.st's Personal Website
+menu_home: Home
+menu_archives: Posts
+menu_github: Github
+notice: Modesty helps one go forward, conceit makes one lag behind.
+author_desc: I'm a sheep. One day I got sheared, and I've had insomnia ever since.
+posted_on: Posted on
+updated_on: Updated on
+last_updated_on: Last updated on
+post_views: Views
+archive_count: "%d posts in total"
+category_count: "%d posts in this category"
+tag_count: "%d posts with this tag"
+theme_light: 🌞 Light
+theme_dark: 🌛 Dark
+theme_auto: 🤖️ Auto
+comment_placeholder: Leave a comment~

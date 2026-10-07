@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+_multiconfig.yml
+# 主题原仓库的 git 记录（改名后保留，便于以后对比上游）
+themes/flexblock/.git-upstream/
+# 本地预览配置
+.claude/

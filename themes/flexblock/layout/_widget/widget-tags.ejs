@@ -1,0 +1,12 @@
+<% var langPosts = lang_posts(page_lang()) %>
+<section class="widget-tags widget-item  layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <%- partial("../_svg/icon-tags.svg") %>
+    <span>TAGS</span>
+  </div>
+  <div class="widget-body">
+    <div class="tags-cloud">
+      <%- tagcloud(site.tags.filter(function (t) { return langPosts.some(function (p) { return p.tags.some(function (pt) { return pt._id === t._id }) }) }), { class: "tags-cloud" }) %>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,39 @@
+categories: Категории
+search: Поиск
+tags: Метки
+tagcloud: Облако меток
+tweets: Твиты
+prev: Назад
+next: Вперед
+comment: Комментарии
+archive_a: Архив
+archive_b: "Архив: %s"
+page: Страница %d
+recent_posts: Недавние записи
+newer: Следующий
+older: Предыдущий
+share: Поделиться
+powered_by: Создано с помощью
+rss_feed: RSS-каналы
+category: Категория
+tag: Метка
+
+site_title: Insomnia Crafting
+site_subtitle: Личный сайт Shawn.st
+site_description: Личный сайт Shawn.st
+menu_home: Главная
+menu_archives: Статьи
+menu_github: Github
+notice: Скромность помогает идти вперёд, самонадеянность заставляет отставать.
+author_desc: Я овечка. Однажды меня постригли, и с тех пор у меня бессонница.
+posted_on: Опубликовано
+updated_on: Обновлено
+last_updated_on: Последнее обновление
+post_views: Просмотры
+archive_count: "Всего статей: %d"
+category_count: "Статей в этой категории: %d"
+tag_count: "Статей с этой меткой: %d"
+theme_light: 🌞 Светлая
+theme_dark: 🌛 Тёмная
+theme_auto: 🤖️ Авто
+comment_placeholder: Оставьте комментарий~

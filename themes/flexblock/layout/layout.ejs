@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="<%- html_lang() %>">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#3367D6"/>
+  <link rel="apple-touch-icon" href="/icons-192.png">
+  <link rel="manifest" href="/manifest.json">
+  
+  <%- meta_generator() %>
+
+  <meta name="description" content="<%= __('site_description') %>">
+
+  <%# 告诉搜索引擎这篇文章的其它语言版本 %>
+  <% lang_switch_links().forEach(function (item) { %>
+    <link rel="alternate" hreflang="<%= item.lang %>" href="<%= item.href %>">
+  <% }) %>
+
+  <% if (config.keywords) { %>
+    <meta name="keywords" content="<%= config.keywords %>">
+  <% } %>
+
+  <% if (config.author) { %>
+    <meta name="author" content="<%= config.author %>">
+  <% } %>
+
+  <% if (config.copyright) { %>
+    <meta name="copyright" content="<%= config.copyright %>">
+  <% } %>
+
+  <%
+  var title = page.title;
+
+  if (is_archive()){
+    title = __('archive_a');
+  } else if (is_category()){
+    title = __('category') + ': ' + page.category;
+  } else if (is_tag()){
+    title = __('tag') + ': ' + page.tag;
+  }
+  %>
+
+  <title><% if (title){ %><%= title %> | <% } %><%= __('site_title') %></title>
+
+  <% if (theme.rss){ %>
+    <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
+  <% } %>
+
+  <% if (theme.favicon){ %>
+    <%- favicon_tag(theme.favicon) %>
+  <% } %>
+
+  <!--mathjax latex数学公式显示支持-->
+  <% if (theme.polyfill.enable) { %>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <% } %>
+  <% if (theme.mathjax.enable && page.mathjax) { %> 
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <% } %>
+
+  <% if (config.highlight.enable) { %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.13/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/<%= config.highlight.theme || 'monokai' %>.min.css">
+  <% } %>
+
+  <% if (config.prismjs.enable) { %>
+    <% if (config.prismjs.preprocess) { %>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.css">
+    <% } else { %>
+      <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.css">
+    <% } %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css">
+  <% } %>
+
+  <%- css('css/style') %>
+  <style>
+    #3d-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    spline-viewer {
+      transform: scale(1.17);
+      transform-origin: center;
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="3d-background"></div>
+
+  <div class="root-container">
+    <%- partial('_partial/header') %>
+
+    <%- body %>
+
+    <%- partial('_partial/footer') %>
+  </div>
+
+  <div class="back-to-top-fixed soft-size--round soft-style--box">
+    <svg class="icon icon-back-to-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <path d="M725.333333 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8l-213.333333-213.333333c-17.066667-17.066667-17.066667-42.666667 0-59.733333s42.666667-17.066667 59.733333 0l213.333333 213.333333c17.066667 17.066667 17.066667 42.666667 0 59.733333C746.666667 422.4 738.133333 426.666667 725.333333 426.666667z"></path>
+      <path d="M298.666667 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8-17.066667-17.066667-17.066667-42.666667 0-59.733333l213.333333-213.333333c17.066667-17.066667 42.666667-17.066667 59.733333 0s17.066667 42.666667 0 59.733333l-213.333333 213.333333C320 422.4 311.466667 426.666667 298.666667 426.666667z"></path>
+      <path d="M512 896c-25.6 0-42.666667-17.066667-42.666667-42.666667L469.333333 170.666667c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 682.666667C554.666667 878.933333 537.6 896 512 896z"></path>
+    </svg>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var deviceWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      
+      if (deviceWidth >= 768) {
+        // 在电脑端加载3D背景
+        var script = document.createElement('script');
+        script.type = 'module';
+        script.src = 'https://unpkg.com/@splinetool/viewer@1.0.93/build/spline-viewer.js';
+        document.head.appendChild(script);
+
+        var splineViewer = document.createElement('spline-viewer');
+        splineViewer.url = 'https://prod.spline.design/7iyAzHcO6U57Ni6A/scene.splinecode';
+        document.getElementById('3d-background').appendChild(splineViewer);
+      }
+    });
+  </script>
+
+  <%# 加载站点脚本 %>
+  <%- partial('_partial/footer-script') %>
+  <%# 加载自定义脚本代码 %>
+  <%- partial('_partial/footer-other') %>
+</body>
+</html>

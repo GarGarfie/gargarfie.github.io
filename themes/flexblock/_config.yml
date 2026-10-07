@@ -1,0 +1,116 @@
+# Header
+menu:
+  # 显示文字在 languages/{zh,en,ru}.yml 的 menu_<键名> 里
+  home: /
+  archives: /archives/
+  github: https://github.com/GarGarfie
+
+
+# 主页banner图
+banner: https://img.cdn1.vip/i/69e2a5a5105ec_1776461221.webp
+
+# 站点通知信息
+notice: 虚心使人进步，骄傲使人退步
+
+# 作者信息
+author:
+  name: Shawn.st
+  avatar: https://1.gravatar.com/avatar/63daf8deda03fff3e5d93f4695772ba020e63141d2c6b7fc9c64b775bb588652?size=256
+  description: 我是只绵羊，有一天剪了毛，然后我就失眠了
+
+toc:
+  max_depth: 3 # 生成 TOC 的最大深度
+  min_depth: 2 # 生成 TOC 的最小深度
+
+comments:
+  enable: true
+  use: 'valine' # valine || disqus
+  # valine 评论
+  # docs: https://valine.js.org
+  # You can get your appid and appkey from https://leancloud.cn
+  # 这里appId和appKey一定一定要改成自己的，没有的话去 https://leancloud.cn 这个网站注册创建一个
+  valine:
+    appId: 0Wop0qxUqdxj1L3nPiTKVdLY-gzGzoHsz
+    appKey: xMnk59E1P5QYuTRPMjJxOya2
+    placeholder: 随便说点什么叭～ # 评论框占位提示符
+    avatar: mp # Gravatar 头像展示方式
+    pageSize: 10 # 评论列表分页，每页条数
+    lang: zh-cn # 多语言支持
+    visitor: true # 文章访问量统计
+    recordIP: true # 是否记录评论者IP
+    enableQQ: true # 是否启用昵称框自动获取QQ昵称和QQ头像，开启后是在昵称框输入QQ号码进行获取
+    meta: "['nick', 'mail', 'link']" # 评论者相关属性，可选值：['nick']，['nick','mail']，['nick', 'mail', 'link']
+    requiredFields: "['nick']" # 设置必填项，默认匿名
+    bilibiliEmoji: true # 是否启用Bilibili表情
+  # disqus 评论
+  # docs: https://disqus.com/
+  disqus:
+    website: 
+    error: 如果你看不到评论，那么就真的看不到评论 w(゜Д゜)w
+
+# dplayer 视频播放
+# docs: http://dplayer.js.org/#/zh-Hans/
+dplayer:
+  enable: true
+  theme: "#b7daff"
+  autoplay: false
+  loop: false
+  mutex: true
+
+# aplayer 音频播放
+# docs: https://aplayer.js.org/#/zh-Hans/
+aplayer:
+  enable: true
+  theme: "#b7daff"
+  autoplay: false
+  loop: false
+  mutex: true
+  lrcType: 3
+
+# mathjax LaTeX公式支持
+# docs: http://docs.mathjax.org/en/latest/
+mathjax:
+  enable: true
+
+# polyfill 提供老版浏览器对新语法的支持
+# website: https://polyfill.io/v3/ 
+polyfill:
+  enable: false
+
+
+# 国内备案信息
+beian: 
+
+# 谷歌分析
+google_analytics: G-F9P5QZ88P2
+# gauges分析
+gauges_analytics: 
+# 百度分析
+baidu_analytics: c95f635f370c6c8e2e4e54fb6e80fc6f
+# 腾讯分析
+tencent_analytics: 
+# 站点ico
+favicon: /favicon.ico
+
+
+# Social Icon
+social_icon:
+  enable: true
+  icons:
+    ins     : 
+    zhihu   : 
+    weibo   : 
+    github  : https://github.com/GarGarfie/
+    twitter : 
+    rg      : https://www.researchgate.net/profile/Shuoting-Xiao-2   #Researchgate
+    orcid   : https://orcid.org/0009-0002-6552-0093
+    googlescholar   : https://scholar.google.com/citations?user=3k16g04AAAAJ
+    scoups  : https://www.scopus.com/authid/detail.uri?authorId=58847090400
+    clvt    : https://www.webofscience.com/wos/author/record/HCH-4506-2022   #Web of Science
+    elibrary: https://www.elibrary.ru/author_items.asp?authorid=1225248
+    
+
+mermaid:
+  enable: true
+  cdn: https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
+  theme: neutral

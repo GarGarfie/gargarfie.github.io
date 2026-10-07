@@ -1,0 +1,64 @@
+/*
+ * 所有的卡片内容样式都在这里
+ *
+ * 卡片的通用样式在`mixins.styl`里
+ */
+
+// 卡片容器
+.card-container {
+  position: relative
+  height: 100%
+
+  .card-cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+  }
+
+  .card-cover + .card-text {
+    color: var(--theme-text-light)
+  }
+
+  .card-text {
+    position: relative;
+    color: var(--theme-text-primary);
+    line-height: var(--font-base-lh);
+    transition: color 0.3s ease;
+
+    .card-text--title {
+      font-size: var(--font-stress-size);
+      font-weight: bolder;
+    }
+
+    .card-text--row {
+      font-size: var(--font-common-size);
+      margin-top: 20px;
+    }
+
+    .last-time {
+      font-size: var(--font-base-size)
+      margin-top: 10px;
+    }
+  }
+}

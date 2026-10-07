@@ -1,0 +1,34 @@
+<!-- navbar -->
+<% var lang = page_lang() %>
+<nav class="navbar">
+  <div class="navbar-content">
+    <!-- logo -->
+    <div class="navbar-logo">
+      <a href="<%= lang_url('/', lang) %>">
+        <% if (theme.logo) { %>
+          <img src="<%= theme.logo %>" alt="<%= __('site_title') %>" />
+        <% } else { %>
+          <%= __('site_title') %>
+        <% } %>
+      </a>
+    </div>
+    <!-- link -->
+    <div class="navbar-link">
+      <div class="navbar-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-list">
+        <% for (var i in theme.menu) { %>
+          <li class="navbar-list-item"><a href="<%- lang_url(theme.menu[i], lang) %>"><%= __('menu_' + i) %></a></li>
+        <% } %>
+        <li class="navbar-list-item navbar-lang">
+          <% lang_switch_links().forEach(function (item) { %>
+            <a href="<%- item.href %>" hreflang="<%= item.lang %>" class="<%= item.active ? 'active' : '' %>"><%= item.label %></a>
+          <% }) %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

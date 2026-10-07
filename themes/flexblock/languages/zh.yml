@@ -1,0 +1,39 @@
+categories: 分类
+search: 搜索
+tags: 标签
+tagcloud: 标签云
+tweets: 推文
+prev: 上一页
+next: 下一页
+comment: 留言
+archive_a: 归档
+archive_b: 归档：%s
+page: 第 %d 页
+recent_posts: 最新文章
+newer: 上一篇
+older: 下一篇
+share: 分享
+powered_by: Powered by
+rss_feed: RSS Feed
+category: 分类
+tag: 标签
+
+site_title: 失眠製造
+site_subtitle: Insomnia Crafting
+site_description: 夜餘のPersonal Website
+menu_home: 首页
+menu_archives: 文章
+menu_github: Github
+notice: 虚心使人进步，骄傲使人退步
+author_desc: 我是只绵羊，有一天剪了毛，然后我就失眠了
+posted_on: 发布于
+updated_on: 更新于
+last_updated_on: 最后更新于
+post_views: 文章访问量
+archive_count: 共有%d篇文章
+category_count: 当前分类下共有%d篇文章
+tag_count: 当前标签下共有%d篇文章
+theme_light: 🌞 浅色
+theme_dark: 🌛 深色
+theme_auto: 🤖️ 自动
+comment_placeholder: 随便说点什么叭～

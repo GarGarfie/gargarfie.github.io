@@ -17,7 +17,7 @@ categories: 学术
 
 # 文献综述型SCI期刊论文学术写作框架
 
-> <iframe src="//player.bilibili.com/player.html?aid=1903338006&bvid=BV1Lm411U7mV&cid=1514875876&p=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+> <iframe src="//player.bilibili.com/player.html?aid=1903338006&bvid=BV1Lm411U7mV&cid=1514875876&p=1&high_quality=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 > 
 >
 >“没到共产主义，总得讲些实际嘛” —— 《中国出了个毛泽东》

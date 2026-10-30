@@ -131,7 +131,7 @@ SCI的期刊论文被不少的学者们调侃为“学术八股文”，似乎�
 
 我们以阅读视角看待一篇文章的摘要和前言部分时，是仅次于题目看到的内容。这就好似一首歌的前奏，好的前奏可以抓住很多人的心。对于编辑来讲亦是如此。
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1970998424&auto=1&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1970998424&auto=0&height=66"></iframe>
 
 摘要包括以下内容：
 

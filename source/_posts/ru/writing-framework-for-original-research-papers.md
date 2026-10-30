@@ -133,7 +133,7 @@ categories: Наука
 
 Для читателя аннотация и введение — то, что он видит сразу после заглавия. Это как вступление песни: хорошее вступление захватывает слушателей. С редакторами то же самое.
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1970998424&auto=1&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1970998424&auto=0&height=66"></iframe>
 
 Аннотация включает:
 

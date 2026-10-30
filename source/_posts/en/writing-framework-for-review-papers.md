@@ -20,7 +20,7 @@ categories: Academic
 
 # A Writing Framework for Literature Review Papers in SCI Journals
 
-> <iframe src="//player.bilibili.com/player.html?aid=1903338006&bvid=BV1Lm411U7mV&cid=1514875876&p=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+> <iframe src="//player.bilibili.com/player.html?aid=1903338006&bvid=BV1Lm411U7mV&cid=1514875876&p=1&high_quality=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 >
 >
 >"We haven't reached communism yet, so we still have to be practical." —— *China Produced a Mao Zedong* (documentary)
